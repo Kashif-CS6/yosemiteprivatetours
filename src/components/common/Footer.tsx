@@ -33,7 +33,7 @@ export default function Footer() {
         {/* Top Tours */}
         <div>
           <h4 className="font-bold mb-4 text-[18px]">Top Tours</h4>
-          <ul className="space-y-2 font-[500] text-gray-500 h-44 flex-wrap flex flex-col text-sm">
+          <ul className="space-y-2 font-[500] text-gray-500 h-40 flex-wrap flex flex-col text-sm">
             <li>1 Day Tour</li>
             <li>2 Day</li>
             <li>3 Day Adventure</li>
