@@ -2,14 +2,15 @@ import React, { ReactNode } from "react";
 interface FullTemplateTypes {
   children: ReactNode;
   color: string;
+  shd: string;
 }
 
-const FullTemplate = ({ children, color }: FullTemplateTypes) => {
-  return (
-    <div style={{ background: color }} className={`bg-[${color}]`}>
-      {children}
-    </div>
-  );
+const FullTemplate = ({
+  children,
+  color = "bg-white",
+  shd = "shadow-none",
+}: FullTemplateTypes) => {
+  return <div className={`${color} ${shd}`}>{children}</div>;
 };
 
 export default FullTemplate;
