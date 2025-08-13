@@ -1,6 +1,7 @@
 // components/YosemiteFeatures.tsx
 import React from "react";
 import { Heart, MapPin, Car, Users } from "lucide-react";
+import HalfTemplate from "@/templates/HalfTemplate";
 
 interface Feature {
   id: number;
@@ -40,40 +41,42 @@ const YosemiteFeatures: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 my-1  bg-white">
-      <div className=" mx-auto">
-        {/* Section Header */}
-        <div className=" mb-6">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 tracking-wide">
-            Why Choose Yosemite Private Tours
-          </h2>
-        </div>
+    <HalfTemplate>
+      <section className="py-16 my-1  bg-white">
+        <div className=" mx-auto">
+          {/* Section Header */}
+          <div className=" mb-6">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 tracking-wide">
+              Why Choose Yosemite Private Tours
+            </h2>
+          </div>
 
-        {/* Features Grid */}
-        <div className="flex items-center justify-between">
-          {features.map((feature) => (
-            <div key={feature.id} className="text-start group">
-              {/* Icon */}
-              <div className="flex justify-start mb-2">
-                <div className="p-3 rounded-full   transition-colors duration-200">
-                  {feature.icon}
+          {/* Features Grid */}
+          <div className="flex items-center justify-between">
+            {features.map((feature) => (
+              <div key={feature.id} className="text-start group">
+                {/* Icon */}
+                <div className="flex justify-start mb-2">
+                  <div className="p-3 rounded-full   transition-colors duration-200">
+                    {feature.icon}
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 leading-tight">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-base w-72">
+                    {feature.description}
+                  </p>
                 </div>
               </div>
-
-              {/* Content */}
-              <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 leading-tight">
-                  {feature.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed text-base w-72">
-                  {feature.description}
-                </p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </HalfTemplate>
   );
 };
 

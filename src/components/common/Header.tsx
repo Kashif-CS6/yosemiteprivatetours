@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import HalfTemplate from "@/templates/HalfTemplate";
+
 
 const Header = () => {
   const dataDay = [
@@ -31,24 +33,28 @@ const Header = () => {
     },
   ];
   return (
-    <div className="flex items-center gap-5 py-6">
-      {dataDay.map((item, idx) => (
-        <Link
-          href={"/"}
-          key={idx}
-          className="flex items-center gap-2 text-[15px] font-[500]"
-        >
-          <Image
-            width={18}
-            height={18}
-            src={item.img}
-            alt={item.heading}
-            className="object-cover"
-          />
-          <span> {item.heading}</span>
-        </Link>
-      ))}
-    </div>
+   
+      <HalfTemplate>
+        <div className="flex items-center gap-5 py-6">
+          {dataDay.map((item, idx) => (
+            <Link
+              href={"/"}
+              key={idx}
+              className="flex items-center gap-2 text-[15px] font-[500]"
+            >
+              <Image
+                width={18}
+                height={18}
+                src={item.img}
+                alt={item.heading}
+                className="object-cover"
+              />
+              <span> {item.heading}</span>
+            </Link>
+          ))}
+        </div>
+      </HalfTemplate>
+    
   );
 };
 

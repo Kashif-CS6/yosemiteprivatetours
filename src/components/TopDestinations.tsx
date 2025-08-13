@@ -1,5 +1,6 @@
 "use client";
 
+import HalfTemplate from "@/templates/HalfTemplate";
 import React from "react";
 
 interface Destination {
@@ -23,36 +24,38 @@ const destinations: Destination[] = [
 
 const TopDestinations: React.FC = () => {
   return (
-    <div className="px-4 py-10 text-center">
-      <h2 className="text-2xl font-bold mb-8">Top Destinations</h2>
+    <HalfTemplate>
+      <div className="px-4 py-10 text-center">
+        <h2 className="text-2xl font-bold mb-8">Top Destinations</h2>
 
-      {/* Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-        {destinations.map((dest) => (
-          <div
-            key={dest.id}
-            className="relative rounded-lg overflow-hidden shadow group cursor-pointer"
-          >
-            <img
-              src={dest.image}
-              alt={dest.name}
-              className="w-full h-36 sm:h-40 md:h-44 lg:h-48 object-cover transform group-hover:scale-105 transition duration-300"
-            />
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300"></div>
-            <span className="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg">
-              {dest.name}
-            </span>
-          </div>
-        ))}
-      </div>
+        {/* Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+          {destinations.map((dest) => (
+            <div
+              key={dest.id}
+              className="relative rounded-lg overflow-hidden shadow group cursor-pointer"
+            >
+              <img
+                src={dest.image}
+                alt={dest.name}
+                className="w-full h-36 sm:h-40 md:h-44 lg:h-48 object-cover transform group-hover:scale-105 transition duration-300"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition duration-300"></div>
+              <span className="absolute inset-0 flex items-center justify-center text-white font-semibold text-lg">
+                {dest.name}
+              </span>
+            </div>
+          ))}
+        </div>
 
-      {/* Button */}
-      <div className="flex justify-center mt-8">
-        <button className="mt-8 px-18 font-bold py-2 border border-gray-800 rounded-full   transition">
-          See all
-        </button>
+        {/* Button */}
+        <div className="flex justify-center mt-8">
+          <button className="mt-8 px-18 font-bold py-2 border border-gray-800 rounded-full   transition">
+            See all
+          </button>
+        </div>
       </div>
-    </div>
+    </HalfTemplate>
   );
 };
 

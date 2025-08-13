@@ -19,31 +19,15 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      <HalfTemplate>
-        <Header />
-      </HalfTemplate>
+      <Header />
       <CarouselComponent />
+      <ExcellentBanner />
+      <YosemiteFeatures />
+      <YosemiteTour />
+      <TourCarousel />
+      <Freecancelation />
+      <TopDestinations />
 
-      <FullTemplate color="white" shd="shadow-xs">
-        <HalfTemplate>
-          <ExcellentBanner />
-        </HalfTemplate>
-      </FullTemplate>
-      <HalfTemplate>
-        <YosemiteFeatures />
-      </HalfTemplate>
-      <FullTemplate color="bg-gray-50" shd="shadow-none">
-        <HalfTemplate>
-          <YosemiteTour />
-        </HalfTemplate>
-      </FullTemplate>
-      <HalfTemplate>
-        <TourCarousel />
-      </HalfTemplate>
-      <HalfTemplate>
-        <Freecancelation />
-        <TopDestinations />
-      </HalfTemplate>
       <Image
         width={1000}
         height={1000}
@@ -52,19 +36,12 @@ const Home = () => {
         className="w-full h-36 mt-5"
       />
       <CustomerSupport />
-      <HalfTemplate>
-        <TestimonialsSection />
-        <FAQSection />
-      </HalfTemplate>
+      <TestimonialsSection />
+      <FAQSection />
 
-      <FullTemplate shd="shadow-none" color="bg-green-900">
-        <HalfTemplate>
-          <FooterTopBanner />
-        </HalfTemplate>
-      </FullTemplate>
-      <HalfTemplate>
-        <Footer />
-      </HalfTemplate>
+      <FooterTopBanner />
+
+      <Footer />
     </div>
   );
 };
