@@ -22,10 +22,10 @@ const CustomerSupport: React.FC = () => {
   return (
     <div className="bg-gray-50/50 mb-4">
       <HalfTemplate>
-        <section className=" py-16 ">
+        <section className=" py-16 px-4 2xl:px-0 ">
           <div className=" mx-auto">
             <div className=" rounded-2xl  overflow-hidden">
-              <div className="flex flex-col lg:flex-row items-center">
+              <div className="flex flex-col gap-4 md:gap-10 lg:gap-0 lg:flex-row items-center">
                 {/* Content Side */}
                 <div className="flex-1 ">
                   <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-6 leading-tight">

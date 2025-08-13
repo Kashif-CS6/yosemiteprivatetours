@@ -14,8 +14,8 @@ import ImageHandler from "../custom/ImageHandler";
 export default function Footer() {
   return (
     <HalfTemplate>
-      <footer className="bg-white">
-        <div className="  py-10 grid grid-cols-1 md:grid-cols-4  gap-8 text-sm">
+      <footer className="bg-white px-4 2xl:px-0">
+        <div className="  py-10 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4  gap-8 text-sm">
           {/* About */}
           <div>
             <h4 className="font-bold mb-4 text-[18px]">About</h4>

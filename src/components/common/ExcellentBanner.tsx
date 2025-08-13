@@ -8,7 +8,7 @@ const ExcellentBanner = () => {
   return (
     <FullTemplate color="white" shd="shadow-xs">
       <HalfTemplate>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center flex-wrap gap-3 md:gap-0  md:flex-nowrap px-4 2xl:px-0 justify-between">
           {/* left side */}
           <div className="flex flex-col gap-1">
             <div className="flex items-center gap-2">

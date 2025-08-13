@@ -31,11 +31,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="border-b border-gray-200">
-          <HalfTemplate>
-            <Navbar />
-          </HalfTemplate>
-        </div>
+        
+          <Navbar />
+        
         {children}
       </body>
     </html>

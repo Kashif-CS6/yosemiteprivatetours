@@ -43,16 +43,16 @@ const YosemiteFeatures: React.FC = () => {
   return (
     <HalfTemplate>
       <section className="py-16 my-1  bg-white">
-        <div className=" mx-auto">
+        <div className=" mx-auto md:px-4 2xl:px-0">
           {/* Section Header */}
           <div className=" mb-6">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 tracking-wide">
+            <h2 className="text-xl text-center lg:text-start sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4 tracking-wide">
               Why Choose Yosemite Private Tours
             </h2>
           </div>
 
           {/* Features Grid */}
-          <div className="flex items-center justify-between">
+          <div className="flex items-center lg:gap-3 xl:gap-0  flex-wrap justify-center md:justify-between">
             {features.map((feature) => (
               <div key={feature.id} className="text-start group">
                 {/* Icon */}

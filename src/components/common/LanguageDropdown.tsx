@@ -41,7 +41,7 @@ const LanguageDropdown: React.FC = () => {
   return (
     <div
       ref={dropdownRef}
-      className="relative inline-block border-l border-gray-300 pl-2 mr-8"
+      className="relative lg:hidden xl:inline-block border-l border-gray-300 pl-2 mr-8"
     >
       <button
         onClick={() => setOpen(!open)}

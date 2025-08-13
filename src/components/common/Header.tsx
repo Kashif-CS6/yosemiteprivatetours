@@ -33,7 +33,7 @@ const Header = () => {
   ];
   return (
     <HalfTemplate>
-      <div className="flex items-center gap-5 py-6">
+      <div className="flex flex-wrap px-4 2xl:px-0 items-center gap-5 py-6">
         {dataDay.map((item, idx) => (
           <Link
             href={"/"}

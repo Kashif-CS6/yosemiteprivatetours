@@ -5,7 +5,7 @@ interface HalfTemplateTypes {
 }
 
 const HalfTemplate = ({ children }: HalfTemplateTypes) => {
-  return <div className="w-[1480px] mx-auto">{children}</div>;
+  return <div className="2xl:w-[1480px] mx-auto">{children}</div>;
 };
 
 export default HalfTemplate;

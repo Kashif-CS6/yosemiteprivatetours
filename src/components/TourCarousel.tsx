@@ -113,8 +113,8 @@ const TourCarousel: React.FC = () => {
         </h2>
         <Slider {...settings}>
           {tours.map((tour) => (
-            <div key={tour.id} className="px-2 ">
-              <div className="bg-white rounded-2xl h-[405px]  border border-gray-300 ">
+            <div key={tour.id} className="px-2  ">
+              <div className="w-80 mx-auto rounded-2xl h-[405px]  border border-gray-300 ">
                 <img
                   src={tour.image}
                   alt={tour.title}
