@@ -8,8 +8,8 @@ import {
   FaTiktok,
 } from "react-icons/fa6";
 import { MdLocationOn, MdPhone } from "react-icons/md";
-import Image from "next/image";
 import HalfTemplate from "@/templates/HalfTemplate";
+import ImageHandler from "../custom/ImageHandler";
 
 export default function Footer() {
   return (
@@ -81,12 +81,12 @@ export default function Footer() {
                 "/googlepay.png",
                 "/paypal.png",
               ].map((src, i) => (
-                <Image
+                <ImageHandler
                   key={i}
-                  src={src}
-                  alt="payment"
-                  width={30}
-                  height={30}
+                  srcImage={src}
+                  altImg="payment"
+                  ImageWidth={30}
+                  ImageHeight={30}
                   className="object-contain"
                 />
               ))}
@@ -98,12 +98,12 @@ export default function Footer() {
         <div className="border-t border-gray-300">
           <div className="   py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-500">
             {/* Logo */}
-            <Image
-              src="/logo.jpg"
-              alt="Logo"
+            <ImageHandler
+              srcImage="/logo.jpg"
+              altImg="Logo"
               className="rounded-full w-16 h-16 object-cover"
-              width={500}
-              height={500}
+              ImageWidth={500}
+              ImageHeight={500}
             />
 
             <p className="text-sm font-[500] tracking-wide">

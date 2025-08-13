@@ -1,8 +1,8 @@
 // components/YosemiteTourCard.tsx
 import HalfTemplate from "@/templates/HalfTemplate";
-import Image from "next/image";
 import React from "react";
 import FullTemplate from "@/templates/FullTemplate";
+import ImageHandler from "./custom/ImageHandler";
 
 const YosemiteTour = () => {
   return (
@@ -30,11 +30,11 @@ const YosemiteTour = () => {
 
           {/* right side */}
           <div>
-            <Image
-              width={500}
-              height={500}
-              src={"/pray.png"}
-              alt="Pray icon"
+            <ImageHandler
+              ImageWidth={500}
+              ImageHeight={500}
+              srcImage={"/pray.png"}
+              altImg="Pray icon"
               className="object-cover"
             />
           </div>

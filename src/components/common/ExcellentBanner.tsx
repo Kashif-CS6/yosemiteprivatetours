@@ -1,8 +1,8 @@
 import HalfTemplate from "@/templates/HalfTemplate";
-import Image from "next/image";
 import React from "react";
 import { IoStarSharp } from "react-icons/io5";
 import FullTemplate from "@/templates/FullTemplate";
+import ImageHandler from "../custom/ImageHandler";
 
 const ExcellentBanner = () => {
   return (
@@ -42,7 +42,13 @@ const ExcellentBanner = () => {
           </div>
           {/* right side */}
           <div>
-            <Image src={"/sp.png"} width={500} height={500} alt="Experiance" />
+            <ImageHandler
+              srcImage={"/sp.png"}
+              ImageWidth={500}
+              ImageHeight={500}
+              altImg="Experiance"
+              className=""
+            />
           </div>
         </div>
       </HalfTemplate>

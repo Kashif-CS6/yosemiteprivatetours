@@ -1,6 +1,6 @@
 import HalfTemplate from "@/templates/HalfTemplate";
-import Image from "next/image";
 import React from "react";
+import ImageHandler from "./custom/ImageHandler";
 
 const Freecancelation = () => {
   return (
@@ -16,12 +16,12 @@ const Freecancelation = () => {
         </div>
         {/* right side */}
         <div>
-          <Image
-            src={"/health.png"}
-            width={500}
-            height={500}
+          <ImageHandler
+            srcImage={"/health.png"}
+            ImageWidth={500}
+            ImageHeight={500}
             className="w-48 h-48"
-            alt="Image-width"
+            altImg="Image-width"
           />
         </div>
       </div>

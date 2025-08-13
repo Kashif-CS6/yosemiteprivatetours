@@ -1,8 +1,8 @@
 // components/CustomerSupport.tsx
 import React from "react";
 import { MessageCircle, Phone } from "lucide-react";
-import Image from "next/image";
 import HalfTemplate from "@/templates/HalfTemplate";
+import ImageHandler from "./custom/ImageHandler";
 
 interface TeamMember {
   id: number;
@@ -65,11 +65,11 @@ const CustomerSupport: React.FC = () => {
                         }}
                       >
                         <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-4 border-white shadow-lg">
-                          <Image
-                            src={member.image}
-                            alt={member.name}
-                            width={80}
-                            height={80}
+                          <ImageHandler
+                            srcImage={member.image}
+                            altImg={member.name}
+                            ImageWidth={80}
+                            ImageHeight={80}
                             className="w-full h-full object-cover"
                           />
                         </div>
@@ -87,17 +87,3 @@ const CustomerSupport: React.FC = () => {
 };
 
 export default CustomerSupport;
-
-// Usage in a page component:
-// pages/index.tsx or app/page.tsx
-/*
-import CustomerSupport, { CustomerSupportWithPlaceholders } from '@/components/CustomerSupport';
-
-export default function Home() {
-  return (
-    <main>
-      <CustomerSupportWithPlaceholders />
-    </main>
-  );
-}
-*/

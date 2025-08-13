@@ -3,6 +3,7 @@ import ExcellentBanner from "@/components/common/ExcellentBanner";
 import Footer from "@/components/common/Footer";
 import FooterTopBanner from "@/components/common/FooterTopBanner";
 import Header from "@/components/common/Header";
+import ImageHandler from "@/components/custom/ImageHandler";
 import CustomerSupport from "@/components/CustomerSupport";
 import FAQSection from "@/components/FAQ/FaqSection";
 import Freecancelation from "@/components/Freecancelation";
@@ -13,7 +14,6 @@ import YosemiteFeatures from "@/components/YosemiteFeature";
 import YosemiteTour from "@/components/YosemiteTour";
 import FullTemplate from "@/templates/FullTemplate";
 import HalfTemplate from "@/templates/HalfTemplate";
-import Image from "next/image";
 import React from "react";
 
 const Home = () => {
@@ -27,14 +27,14 @@ const Home = () => {
       <TourCarousel />
       <Freecancelation />
       <TopDestinations />
-
-      <Image
-        width={1000}
-        height={1000}
-        alt=""
-        src={"/mountain-xb.png"}
+      <ImageHandler
+        srcImage="/mountain-xb.png"
+        ImageHeight={1000}
+        ImageWidth={1000}
+        altImg="mountain"
         className="w-full h-36 mt-5"
       />
+
       <CustomerSupport />
       <TestimonialsSection />
       <FAQSection />

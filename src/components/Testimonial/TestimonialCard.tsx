@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import { ImQuotesRight } from "react-icons/im";
+import ImageHandler from "../custom/ImageHandler";
 
 interface TestimonialCardProps {
   name: string;
@@ -24,16 +24,18 @@ export default function TestimonialCard({
 
       {/* User Info */}
       <div className="flex items-center gap-3 mb-2">
-        <Image
-          src={image}
-          alt={name}
-          width={500}
-          height={500}
+        <ImageHandler
+          srcImage={image}
+          altImg={name}
+          ImageWidth={500}
+          ImageHeight={500}
           className="rounded-full object-cover w-12 h-12"
         />
         <div>
           <h4 className="font-semibold text-left text-sm">{name}</h4>
-          <p className="text-xs text-left text-gray-500 font-[500]">{location}</p>
+          <p className="text-xs text-left text-gray-500 font-[500]">
+            {location}
+          </p>
         </div>
       </div>
 
