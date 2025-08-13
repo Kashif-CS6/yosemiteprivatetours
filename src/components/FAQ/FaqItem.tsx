@@ -22,7 +22,7 @@ export default function FAQItem({
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex justify-between items-center">
-        <h3 className="font-bold tracking-wide text-gray-800">{question}</h3>
+        <h3 className="font-bold tracking-wide w-64 md:w-auto text-gray-800">{question}</h3>
         <button className="w-9 flex items-center justify-center h-9 border rounded-full border-gray-300">
           {isOpen ? (
             <IoIosClose size={22} className="text-gray-500" />
