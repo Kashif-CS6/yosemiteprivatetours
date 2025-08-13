@@ -8,9 +8,9 @@ const YosemiteTour = () => {
   return (
     <FullTemplate color="bg-gray-50" shd="shadow-none">
       <HalfTemplate>
-        <div className="flex items-center flex-wrap md:justify-center py-6 md:py-4 lg:py-2 xl:py-0 px-4 2xl:px-0 lg:justify-between">
+        <div className="flex items-center flex-wrap  md:justify-center py-6 md:py-4 lg:py-2 xl:py-0 px-4 2xl:px-0 lg:justify-between">
           {/* left side */}
-          <div className="lg:w-6/12 flex flex-col gap-3 2xl:h-[60vh] justify-center">
+          <div className="  lg:w-5/12 xl:w-6/12 flex flex-col gap-3 2xl:h-[60vh] justify-center">
             <h1 className="text-3xl tracking-wide font-bold leading-[60px]">
               About Yosemite Private Tours
             </h1>
