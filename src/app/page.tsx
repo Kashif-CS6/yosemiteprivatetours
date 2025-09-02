@@ -3,6 +3,7 @@ import ExcellentBanner from "@/components/common/ExcellentBanner";
 import Footer from "@/components/common/Footer";
 import FooterTopBanner from "@/components/common/FooterTopBanner";
 import Header from "@/components/common/Header";
+import Navbar from "@/components/common/Navbar";
 import ImageHandler from "@/components/custom/ImageHandler";
 import CustomerSupport from "@/components/CustomerSupport";
 import FAQSection from "@/components/FAQ/FaqSection";
@@ -19,6 +20,7 @@ import React from "react";
 const Home = () => {
   return (
     <div>
+      <Navbar />
       <Header />
       <CarouselComponent />
       <ExcellentBanner />

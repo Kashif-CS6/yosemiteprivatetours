@@ -120,7 +120,7 @@ const CarasolComponent: React.FC = () => {
   };
 
   return (
-    <div className="slider-container w-full h-screen overflow-hidden relative -mb-40">
+    <div className="slider-container w-full h-fit overflow-hidden relative">
       <Slider {...settings}>
         {slides.map((slide) => (
           <div key={slide.id}>
