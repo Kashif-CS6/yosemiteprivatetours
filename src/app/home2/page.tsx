@@ -13,6 +13,8 @@ import HalfTemplate from "@/templates/HalfTemplate";
 import { WatchIcon } from "lucide-react";
 import Image from "next/image";
 import ImageHandler from "@/components/custom/ImageHandler";
+import FabolusTours from "@/components/Home2Components/FabolusTours";
+import FeaturedCollections from "@/components/Home2Components/FeaturedCollections";
 
 const Home2 = () => {
   return (
@@ -30,6 +32,8 @@ const Home2 = () => {
       <HalfTemplate>
         <TourExperts />
         <TestimonialsSection />
+        <FabolusTours />
+        <FeaturedCollections />
       </HalfTemplate>
       <ImageHandler
         srcImage="/mountain-xb.png"
@@ -38,6 +42,7 @@ const Home2 = () => {
         altImg="mountain"
         className="w-full h-36 mt-5"
       />
+
       <FooterTopBanner2 />
     </div>
   );
