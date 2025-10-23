@@ -32,7 +32,7 @@ const Navbar = () => {
           </div>
           {/* right side */}
           <div className="hidden lg:flex items-center gap-5 font-[400]">
-            <Link href={"/"}>Yosemite</Link>
+            <Link href={"/home2"}>Yosemite</Link>
             <Link href={"/"}>Mammoth Lakes</Link>
             <Link href={"/"}>Tahoe</Link>
             <Link href={"/"}>Alcatraz</Link>
